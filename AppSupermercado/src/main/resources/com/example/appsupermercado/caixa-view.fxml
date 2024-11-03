@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.appsupermercado.CaixaController"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Valor do Produto:" />
+    <TextField fx:id="valorProdutoTextField" />
+
+    <Label text="Quantidade:" />
+    <TextField fx:id="quantidadeTextField" />
+
+    <Button text="Calcular Total" onAction="#calcularTotal" />
+
+    <Label text="Total:" />
+    <Label fx:id="totalLabel" text="0.00" />
+
+
+</VBox>

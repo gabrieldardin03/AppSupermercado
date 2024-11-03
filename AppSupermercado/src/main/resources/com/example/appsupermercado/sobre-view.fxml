@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.appsupermercado.controllerSobre"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <MenuBar prefHeight="25.0" prefWidth="300.0">
+        <Menu text="Funcionalidades">
+            <MenuItem onAction="#abrirCaixa" text="Caixa" />
+            <MenuItem onAction="#abrirVerificadorDePreco" text="Verificador de Preço" />
+        </Menu>
+        <Menu text="Sobre">
+        </Menu>
+        <Menu onAction="#onSairButtonClick" text="Sair">
+        </Menu>
+    </MenuBar>
+
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="84.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@images/mercadoDardin.jpg" />
+        </image>
+    </ImageView>
+
+</AnchorPane>

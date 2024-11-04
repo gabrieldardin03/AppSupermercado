@@ -24,13 +24,12 @@
    </ImageView>
 
 
+    <AnchorPane>
 
+        <Button text="Caixa" onAction="#abrirCaixa" />
+        <Button text="Verificador de preço" onAction="#abrirVerificadorDePreco" />
+        <Button text="sobre o sistema" onAction="#sobre" />
+        <Button text="sair" onAction="#onSairButtonClick" />
+    </AnchorPane>
 
-</AnchorPane>
-<AnchorPane>
-
-<Button text="Caixa" onAction="#abrirCaixa" />
-<Button text="Verificador de preço" onAction="#abrirVerificadorDePreco" />
-<Button text="sobre o sistema" onAction="#sobre" />
-<Button text="sair" onAction="#onSairButtonClick" />
 </AnchorPane>

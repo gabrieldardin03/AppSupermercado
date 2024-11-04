@@ -20,10 +20,10 @@ public class CaixaController {
     @FXML
     protected void calcularTotal() {
         try {
-            double valorProduto = Double.parseDouble(CodProdutoTextField.getText());
+            int CodProduto =  (int) Double.parseDouble(CodProdutoTextField.getText());
             int quantidade = Integer.parseInt(quantidadeTextField.getText());
             char ItensDaSacola = ItemsDaSacola.getText().charAt(0);
-            double total = valorProduto * quantidade;
+            int total = CodProduto * quantidade;
             totalLabel.setText(String.format("%.2f", total));
         } catch (NumberFormatException e) {
             totalLabel.setText("Erro de entrada");

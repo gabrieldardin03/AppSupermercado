@@ -1,5 +1,6 @@
 package com.example.appsupermercado;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -17,8 +18,9 @@ public class CaixaController {
     @FXML
     private Label totalLabel;
 
-    @FXML
-    protected void calcularTotal() {
+
+@FXML
+    public void AdicionarLista() {
         try {
             int CodProduto =  (int) Double.parseDouble(CodProdutoTextField.getText());
             int quantidade = Integer.parseInt(quantidadeTextField.getText());
@@ -29,6 +31,5 @@ public class CaixaController {
             totalLabel.setText("Erro de entrada");
         }
     }
-
-
 }
+

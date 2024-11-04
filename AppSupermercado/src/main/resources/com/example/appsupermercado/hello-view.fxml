@@ -4,17 +4,23 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.input.KeyCodeCombination?>
 <AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appsupermercado.HelloController">
 
     <MenuBar prefHeight="25.0" prefWidth="300.0">
         <Menu text="Funcionalidades">
-            <MenuItem onAction="#abrirCaixa" text="Caixa" />
+            <MenuItem onAction="#abrirCaixa" text="_Caixa">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F2" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
             <MenuItem onAction="#abrirVerificadorDePreco" text="Verificador de Preço" />
         </Menu>
         <Menu text="Sobre">
             <MenuItem  onAction="#sobre" text="Sistema"/>
         </Menu>
-        <Menu onAction="#onSairButtonClick" text="Sair">
+        <Menu text="Sair">
+            <MenuItem onAction="#onSairButtonClick" text="Sair do Sistema"/>
         </Menu>
     </MenuBar>
    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="84.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
@@ -24,12 +30,9 @@
    </ImageView>
 
 
-    <AnchorPane>
 
-        <Button text="Caixa" onAction="#abrirCaixa" />
-        <Button text="Verificador de preço" onAction="#abrirVerificadorDePreco" />
-        <Button text="sobre o sistema" onAction="#sobre" />
-        <Button text="sair" onAction="#onSairButtonClick" />
-    </AnchorPane>
+
+
+
 
 </AnchorPane>

@@ -17,13 +17,10 @@
     </padding>
 
     <Label text="Código do produto: "/>
-    <TextField fx:id="codigoProdutoTextField" />
+    <TextField fx:id="codigoProdutoTextField" onKeyTyped="#onCodigoProdutoTextFieldKeyTyped" />
     <Label text= "Descrição:  "/>
     <Label fx:id="produtoLabel" text=" " />
     <Label text="Valor:"/>
     <Label fx:id="valorLabel" text="R$ " />
-
-
-
 
 </VBox>

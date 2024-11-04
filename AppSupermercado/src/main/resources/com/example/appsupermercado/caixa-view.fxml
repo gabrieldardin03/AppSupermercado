@@ -20,7 +20,7 @@
     <Label text="Quantidade:" />
     <TextField fx:id="quantidadeTextField" />
 
-    <Button text="Calcular Total" onAction="#calcularTotal" />
+    <Button text="adicionar a lista" onAction="#AdicionarLista" />
 
     <Label text="Total:" />
     <VBox>

@@ -1,5 +1,6 @@
 package com.example.appsupermercado;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -32,4 +33,15 @@ public class HelloController {
     protected  void onSairButtonClick(){
         System.exit(0);
     }
+
+
+    public void sobre() throws IOException {    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sobre-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 320, 340);
+        Stage stage = new Stage();
+        stage.setTitle("sistema");
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }
+

@@ -12,6 +12,7 @@
             <MenuItem onAction="#abrirVerificadorDePreco" text="Verificador de Preço" />
         </Menu>
         <Menu text="Sobre">
+            <MenuItem  onAction="#sobre" text="Sistema"/>
         </Menu>
         <Menu onAction="#onSairButtonClick" text="Sair">
         </Menu>
@@ -25,4 +26,11 @@
 
 
 
+</AnchorPane>
+<AnchorPane>
+
+<Button text="Caixa" onAction="#abrirCaixa" />
+<Button text="Verificador de preço" onAction="#abrirVerificadorDePreco" />
+<Button text="sobre o sistema" onAction="#sobre" />
+<Button text="sair" onAction="#onSairButtonClick" />
 </AnchorPane>

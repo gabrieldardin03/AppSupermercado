@@ -6,7 +6,10 @@ import javafx.scene.control.TextField;
 
 public class CaixaController {
     @FXML
-    private TextField valorProdutoTextField;
+    private TextField ItemsDaSacola;
+
+    @FXML
+    private TextField CodProdutoTextField;
 
     @FXML
     private TextField quantidadeTextField;
@@ -17,8 +20,9 @@ public class CaixaController {
     @FXML
     protected void calcularTotal() {
         try {
-            double valorProduto = Double.parseDouble(valorProdutoTextField.getText());
+            double valorProduto = Double.parseDouble(CodProdutoTextField.getText());
             int quantidade = Integer.parseInt(quantidadeTextField.getText());
+            char ItensDaSacola = ItemsDaSacola.getText().charAt(0);
             double total = valorProduto * quantidade;
             totalLabel.setText(String.format("%.2f", total));
         } catch (NumberFormatException e) {

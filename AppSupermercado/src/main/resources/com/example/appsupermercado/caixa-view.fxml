@@ -14,8 +14,8 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label text="Valor do Produto:" />
-    <TextField fx:id="valorProdutoTextField" />
+    <Label text="codigo do Produto:" />
+    <TextField fx:id="CodProdutoTextField" />
 
     <Label text="Quantidade:" />
     <TextField fx:id="quantidadeTextField" />
@@ -23,6 +23,10 @@
     <Button text="Calcular Total" onAction="#calcularTotal" />
 
     <Label text="Total:" />
+    <VBox>
+        <Label text="itens:" />
+        <TextField fx:id="ItemsDaSacola" />
+    </VBox>
     <Label fx:id="totalLabel" text="0.00" />
 
 

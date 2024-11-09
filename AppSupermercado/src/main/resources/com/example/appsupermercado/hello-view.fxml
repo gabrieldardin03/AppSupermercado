@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.geometry.Insets?>
 <AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appsupermercado.HelloController">
 
     <MenuBar prefHeight="25.0" prefWidth="300.0">
@@ -28,6 +29,15 @@
          <Image url="@images/mercadoDardin.jpg" />
       </image>
    </ImageView>
+
+    <VBox>
+    <AnchorPane.topAnchor>200.0</AnchorPane.topAnchor>
+    <AnchorPane.leftAnchor>100.0</AnchorPane.leftAnchor>
+    <Button text="Caixa" onAction="#abrirCaixa" />
+    <Button text="Verificador de Preço" onAction="#abrirVerificadorDePreco" />
+    <Button text="Sobre" onAction="#sobre" />
+    <Button text="Sair" onAction="#onSairButtonClick" />
+    </VBox>
 
 
 

@@ -31,5 +31,18 @@ public class CaixaController {
             totalLabel.setText("Erro de entrada");
         }
     }
-}
+
+    public void ExcluirLista(ActionEvent actionEvent) {
+        try {
+            int CodProduto =  (int) Double.parseDouble(CodProdutoTextField.getText());
+            int quantidade = Integer.parseInt(quantidadeTextField.getText());
+            char ItensDaSacola = ItemsDaSacola.getText().charAt(0);
+            int total = CodProduto * quantidade;
+            totalLabel.setText(String.format("%.2f", total));
+        } catch (NumberFormatException e) {
+            totalLabel.setText("Erro de entrada");
+        }
+    }
+    }
+
 

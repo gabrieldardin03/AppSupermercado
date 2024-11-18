@@ -38,6 +38,10 @@ public class CaixaController {
         sacolaListView.setItems(sacolaObservableList);
     }
 
+
+
+
+
     @FXML
     public void codigoproduto(KeyEvent keyEvent) {
         String codigo = codProdutoTextField.getText();
@@ -144,4 +148,6 @@ public class CaixaController {
     public void sairSistema() {
         System.exit(0);
     }
+
+
 }

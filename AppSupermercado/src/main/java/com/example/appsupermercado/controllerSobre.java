@@ -16,4 +16,9 @@ public class controllerSobre {
     @FXML
     public void onSairButtonClick( ) {
     }
+
+    public void sobre(ActionEvent actionEvent) {
+    }
+
+
 }

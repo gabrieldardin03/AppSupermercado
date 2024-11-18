@@ -37,12 +37,14 @@
     <VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
           prefHeight="200.0" prefWidth="200.0">
-    <AnchorPane.topAnchor>200.0</AnchorPane.topAnchor>
-    <AnchorPane.leftAnchor>100.0</AnchorPane.leftAnchor>
+
     <Button text="Caixa" onAction="#abrirCaixa" />
     <Button text="Verificador de Preço" onAction="#abrirVerificadorDePreco" />
     <Button text="Sobre" onAction="#sobre" />
     <Button text="Sair" onAction="#onSairButtonClick" />
+        <AnchorPane.topAnchor>200.0</AnchorPane.topAnchor>
+
+        <AnchorPane.leftAnchor>60.0</AnchorPane.leftAnchor>
     </VBox>
 
 

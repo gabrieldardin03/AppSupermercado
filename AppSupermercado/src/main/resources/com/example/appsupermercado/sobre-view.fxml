@@ -10,12 +10,32 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.text.Text?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.input.KeyCodeCombination?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.appsupermercado.controllerSobre"
       prefHeight="400.0" prefWidth="600.0">
 
-
+    <MenuBar prefHeight="25.0" prefWidth="300.0">
+        <Menu text="Funcionalidades">
+            <MenuItem onAction="#abrirCaixa" text="_Caixa">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F2" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
+            <MenuItem onAction="#abrirVerificadorDePreco" text="Verificador de Preço" >
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="F3" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu text="Sobre">
+            <MenuItem  onAction="#sobre" text="Sistema"/>
+        </Menu>
+        <Menu text="Sair">
+            <MenuItem onAction="#onSairButtonClick" text="Sair do Sistema"/>
+        </Menu>
+    </MenuBar>
 
     <VBox spacing="10" alignment="CENTER">
         <padding>

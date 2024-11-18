@@ -71,22 +71,18 @@ public class CaixaController {
             double preco = Double.parseDouble(produto.split("R\\$ ")[1].replace(",", "."));
             double subtotal = preco * quantidade;
 
-            // Atualiza o total
             total += subtotal;
             totalLabel.setText(String.format("R$ %.2f", total));
 
-            // Adiciona à lista de sacola
             sacolaObservableList.add(produto + " - Qtd: " + quantidade + " - Total: R$ " + String.format("%.2f", subtotal));
 
         } catch (Exception e) {
             produtoLabel.setText("Erro ao adicionar produto.");
         } finally {
-            // Limpa os campos de entrada
             codProdutoTextField.clear();
             quantidadeTextField.clear();
             codProdutoTextField.requestFocus();
 
-            // Atualiza o troco
             calcularTroco();
         }
     }
@@ -103,18 +99,15 @@ public class CaixaController {
                 if (parts.length > 1) {
                     double subtotal = Double.parseDouble(parts[1].replace(",", ".").trim());
 
-                    // Atualiza o total
                     total -= subtotal;
                     totalLabel.setText(String.format("R$ %.2f", total));
                 }
 
-                // Remove o item da lista
                 sacolaObservableList.remove(selectedIndex);
 
             } catch (Exception e) {
                 System.err.println("Erro ao excluir item: " + e.getMessage());
             } finally {
-                // Atualiza o troco
                 calcularTroco();
             }
         } else {
@@ -132,7 +125,6 @@ public class CaixaController {
             double valorPago = Double.parseDouble(valorPagoTextField.getText().replace(",", ".").trim());
             double troco = valorPago - total;
 
-            // Atualiza o rótulo do troco
             trocoLabel.setText(String.format("R$ %.2f", Math.max(troco, 0)));
         } catch (NumberFormatException e) {
             trocoLabel.setText("R$ 0.00");

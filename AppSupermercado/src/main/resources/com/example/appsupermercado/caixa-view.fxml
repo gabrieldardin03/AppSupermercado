@@ -3,31 +3,52 @@
 <?import javafx.scene.control.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 
-
-<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx"
+<VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.appsupermercado.CaixaController"
-      prefHeight="400.0" prefWidth="600.0">
+      spacing="10.0" alignment="CENTER"
+      prefHeight="600.0" prefWidth="800.0">
 
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label text="codigo do Produto:" />
-    <TextField fx:id="CodProdutoTextField" />
+    <Label text="Supermercado Preço Bom" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <HBox spacing="10.0" alignment="CENTER">
+        <Button text="Caixa" onMouseClicked="#abrirCaixa"/>
+        <Button text="Sair" onMouseClicked="#sairSistema"/>
+    </HBox>
 
-    <Label text="Quantidade:" />
-    <TextField fx:id="quantidadeTextField" />
+    <VBox spacing="10.0" alignment="CENTER">
+        <Label text="Caixa de Supermercado" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
 
-    <Button text="adicionar a lista" onAction="#AdicionarLista" />
+        <HBox spacing="10.0">
+            <Label text="Código:"/>
+            <TextField fx:id="codProdutoTextField" onKeyTyped="#codigoproduto"/>
+            <Label text="Quantidade:"/>
+            <TextField fx:id="quantidadeTextField"/>
+        </HBox>
 
-    <Label text="Total:" />
-    <VBox>
-        <Label text="itens:" />
-        <TextField fx:id="ItemsDaSacola" />
+        <Label fx:id="produtoLabel" text="Desodorante - R$ 11.90"/>
+        <Button text="Adicionar à lista" onMouseClicked="#adicionarLista"/>
+
+        <Label text="Lista de produtos:"/>
+        <ListView fx:id="sacolaListView" prefHeight="150.0"/>
+
+        <HBox spacing="10.0">
+            <Label text="Total: R$"/>
+            <Label fx:id="totalLabel" text="0.00"/>
+        </HBox>
+
+        <HBox spacing="10.0">
+            <Label text="Valor pago: R$"/>
+            <TextField fx:id="valorPagoTextField" onKeyTyped="#calcularTroco"/>
+            <Label text="Troco: R$"/>
+            <Label fx:id="trocoLabel" text="0.00"/>
+        </HBox>
+
+        <Button text="Excluir" onMouseClicked="#excluirLista"/>
     </VBox>
-    <Label fx:id="totalLabel" text="0.00" />
-
-    <Button text="excluir da lista" onAction="#ExcluirLista" />
 </VBox>

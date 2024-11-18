@@ -15,14 +15,7 @@
       fx:controller="com.example.appsupermercado.controllerSobre"
       prefHeight="400.0" prefWidth="600.0">
 
-    <MenuBar prefHeight="25.0" prefWidth="300.0">
-        <Menu text="Funcionalidades">
-            <MenuItem onAction="#abrirCaixa" text="Caixa" />
-            <MenuItem onAction="#abrirVerificadorDePreco" text="Verificador de Preço" />
-        </Menu>
-        <Menu text="Sobre" />
-        <Menu onAction="#onSairButtonClick" text="Sair" />
-    </MenuBar>
+
 
     <VBox spacing="10" alignment="CENTER">
         <padding>

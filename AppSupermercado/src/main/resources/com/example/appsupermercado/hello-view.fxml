@@ -15,7 +15,11 @@
                     <KeyCodeCombination alt="UP" code="F2" control="UP" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
             </MenuItem>
-            <MenuItem onAction="#abrirVerificadorDePreco" text="Verificador de Preço" />
+            <MenuItem onAction="#abrirVerificadorDePreco" text="Verificador de Preço" >
+            <accelerator>
+                <KeyCodeCombination alt="UP" code="F3" control="UP" meta="UP" shift="UP" shortcut="UP" />
+            </accelerator>
+            </MenuItem>
         </Menu>
         <Menu text="Sobre">
             <MenuItem  onAction="#sobre" text="Sistema"/>
@@ -30,7 +34,9 @@
       </image>
    </ImageView>
 
-    <VBox>
+    <VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          prefHeight="200.0" prefWidth="200.0">
     <AnchorPane.topAnchor>200.0</AnchorPane.topAnchor>
     <AnchorPane.leftAnchor>100.0</AnchorPane.leftAnchor>
     <Button text="Caixa" onAction="#abrirCaixa" />

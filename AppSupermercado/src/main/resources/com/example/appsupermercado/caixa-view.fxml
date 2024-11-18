@@ -17,8 +17,11 @@
 
     <Label text="Supermercado Preço Bom" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
     <HBox spacing="10.0" alignment="CENTER">
-        <Button text="Caixa" onMouseClicked="#abrirCaixa"/>
-        <Button text="Sair" onMouseClicked="#sairSistema"/>
+
+        <Button text="Sair" onMouseClicked="#onSairButtonClick"/>
+
+
+
     </HBox>
 
     <VBox spacing="10.0" alignment="CENTER">

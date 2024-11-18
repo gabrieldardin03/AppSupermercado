@@ -34,7 +34,7 @@ public class HelloController {
         System.exit(0);
     }
 
-
+    @FXML
     public void sobre() throws IOException {    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sobre-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 340);
         Stage stage = new Stage();

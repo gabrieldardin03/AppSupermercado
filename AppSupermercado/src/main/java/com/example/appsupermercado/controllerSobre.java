@@ -5,20 +5,11 @@ import javafx.fxml.FXML;
 
 public class controllerSobre {
 
-    @FXML
-    public void abrirCaixa( ) {
-    }
+
 
     @FXML
-    public void abrirVerificadorDePreco( ) {
+    protected  void onSairButtonClick(){
+        System.exit(0);
     }
-
-    @FXML
-    public void onSairButtonClick( ) {
-    }
-
-    public void sobre(ActionEvent actionEvent) {
-    }
-
 
 }

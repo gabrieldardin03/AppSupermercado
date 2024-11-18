@@ -7,9 +7,6 @@ public class controllerSobre {
 
 
 
-    @FXML
-    protected  void onSairButtonClick(){
-        System.exit(0);
-    }
+
 
 }

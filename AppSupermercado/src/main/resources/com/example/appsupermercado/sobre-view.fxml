@@ -16,11 +16,6 @@
       fx:controller="com.example.appsupermercado.controllerSobre"
       prefHeight="400.0" prefWidth="600.0">
 
-    <MenuBar prefHeight="25.0" prefWidth="300.0">
-        <Menu text="Sair">
-            <MenuItem onAction="#onSairButtonClick" text="Sair do Sistema"/>
-        </Menu>
-    </MenuBar>
 
     <VBox spacing="10" alignment="CENTER">
         <padding>
